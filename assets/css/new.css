@@ -1,0 +1,42 @@
+.project-desc {
+    height: 100%;
+}
+
+
+
+.user-img {
+    width: 342px;
+
+}
+
+.user-img img {
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .user-top {
+        margin: 300px 0 0 50px;
+    }
+
+    .back-user {
+        width: 342px;
+        height: 456px;
+        background: url('../img/user1.png');
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .back-user {
+        width: 258px;
+        height: 190px;
+        background: url('../img/user.png');
+        background-size: 100%;
+    }
+    .project-desc {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+    
+}
