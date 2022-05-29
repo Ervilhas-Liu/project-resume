@@ -1,6 +1,6 @@
-# 个人简历网站
+# 项目合集展示
 
-在线访问：https://ervilhas-liu.github.io/pea.github.io/
+- 可通过如下链接进行访问：https://ervilhas-liu.github.io/pea.github.io/
 
-以这个https://github.com/bedimcode/portfolio-responsive-complete 为依据，并进行部分功能的更改。
+- 参考模板：https://github.com/bedimcode/portfolio-responsive-complete
 
