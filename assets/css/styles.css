@@ -594,7 +594,7 @@ div.skills_close .skills_info {
   .carousel_list {
     list-style: none;
     transition: 0.5s;
-    width: 400%;
+    width: 800%;
     display: flex;
     border-radius: .5rem;
   }

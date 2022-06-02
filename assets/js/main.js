@@ -98,13 +98,13 @@ const rightClick = () => {
     id++;
     // 加上动画
     ul.style.transition = '0.5s';
-    ul.style.transform = `translateX(${-id * 25}%)`;
+    ul.style.transform = `translateX(${-id * 12.5}%)`;
     // 如果为第4张图片
-    if (id === 3) {
+    if (id === 9) {
         // 等待动画结束
         id = 0;
         setTimeout(() => { // 移动回第一张照片
-            ul.style.transform = `translateX(${-id * 25}%)`;
+            ul.style.transform = `translateX(${-id * 12.5}%)`;
             ul.style.transition = 'none'; // 悄悄的移动不要动画
         }, 500);
     }
@@ -113,19 +113,20 @@ const rightClick = () => {
         isLock = false;
     }, 500);
 }
+
 btn_r.addEventListener('click', rightClick);
 btn_l.addEventListener('click', () => {
     if (isLock) return;
     if (id === 0) {
         ul.style.transform = 'translateX(-80%)';
         ul.style.transition = 'none';
-        id = 3;
+        id = 9;
     }
     setTimeout(() => {
         id--;
         setCircles(id);
         ul.style.transition = '0.5s';
-        ul.style.transform = `translateX(${-id * 25}%)`;
+        ul.style.transform = `translateX(${-id * 12.5}%)`;
     }, 0);
     setTimeout(() => {
         isLock = false;
@@ -143,10 +144,11 @@ ol.addEventListener('click', e => {
     // 如果点击的是li
     if (e.target.tagName === 'LI') {
         id = Number(e.target.getAttribute('data-n'));
-        ul.style.transform = `translate(${-id * 25}%)`;
+        ul.style.transform = `translate(${-id * 12.5}%)`;
         setCircles(id);
     }
 });
+
 // 定时器 自动轮播 模拟鼠标右点击
 let timer = setInterval(rightClick, 2000);
 ul.addEventListener('mouseover', () => {

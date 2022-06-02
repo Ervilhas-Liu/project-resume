@@ -11,6 +11,12 @@
     width: 100%;
 }
 
+.project {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
 @media screen and (min-width: 1024px) {
     .home__social {
         display: flex;
